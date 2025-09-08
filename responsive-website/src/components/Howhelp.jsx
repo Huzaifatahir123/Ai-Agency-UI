@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Howhelp = () => {
   return (
-    <>
+    <section id="services">
       <div className="flex flex-col items-center gap-8 px-4 py-20 sm:px-12 lg:px-24 xl:px-40">
         <motion.h1 initial={{opacity:0,y:20}}
               whileInView={{opacity:1,y:0}}
@@ -75,7 +75,7 @@ const Howhelp = () => {
           </div>
         ))}
       </motion.div>
-    </>
+    </section>
   );
 };
 

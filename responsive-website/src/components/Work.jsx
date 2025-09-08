@@ -3,7 +3,7 @@ import assets from '../assets/assets'
 import { motion } from "framer-motion";
 const Work = () => {
   return (
-    <>
+    <section id='ourwork'>
           <div
            className="flex flex-col items-center gap-8 px-4 py-20 sm:px-12 lg:px-24 xl:px-40 ">
         <motion.h1
@@ -75,7 +75,7 @@ const Work = () => {
 
      
 
-    </>
+    </section>
   )
 }
 

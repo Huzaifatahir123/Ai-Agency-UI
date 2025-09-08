@@ -34,32 +34,33 @@ function Navbar({ theme, settheme }) {
           className="w-5 absolute right-4 top-4 sm:hidden"
           alt=""
         />
-        <motion.a
+        <motion.a 
+         onClick={()=>{setsidebar(true)}}
              initial={{opacity:0,y:20}}
               animate={{opacity:1,y:0}}
               transition={{duration:0.5,delay:0.7}}
-              viewport={{once:true}} href="" className="sm:hover:border-b ">
+              viewport={{once:true}} href="/" className="sm:hover:border-b ">
           Home
         </motion.a>
-        <motion.a
+        <motion.a onClick={()=>{setsidebar(true)}}
               initial={{opacity:0,y:20}}
               animate={{opacity:1,y:0}}
               transition={{duration:0.5,delay:0.7}}
               viewport={{once:true}}
-          href="" className="sm:hover:border-b">
+          href="#services" className="sm:hover:border-b">
           Services
         </motion.a>
-        <motion.a     initial={{opacity:0,y:20}}
+        <motion.a  onClick={()=>{setsidebar(true)}}    initial={{opacity:0,y:20}}
               animate={{opacity:1,y:0}}
               transition={{duration:0.5,delay:0.7}}
               viewport={{once:true}} 
-        href="" className="sm:hover:border-b">
+        href="#ourwork" className="sm:hover:border-b">
           Our work
         </motion.a>
-        <motion.a      initial={{opacity:0,y:20}}
+        <motion.a   onClick={()=>{setsidebar(true)}}    initial={{opacity:0,y:20}}
               animate={{opacity:1,y:0}}
               transition={{duration:0.5,delay:0.7}}
-              viewport={{once:true}} href="" className="sm:hover:border-b">
+              viewport={{once:true}} href="#contactus" className="sm:hover:border-b">
           Contact US
         </motion.a>
       </div>
@@ -75,6 +76,7 @@ function Navbar({ theme, settheme }) {
           className="w-8 sm:hidden"
         />
         <motion.a
+
           whileHover={{scale:1.05}}
           transition={{ease:"backInOut",duration: 0.2,}}
           href=""
