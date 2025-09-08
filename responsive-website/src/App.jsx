@@ -8,10 +8,12 @@ import Work from './components/Work';
 import Team from './components/Team';
 import Reach from './components/Reach';
 import Footer from './components/Footer';
+import { Toaster } from 'react-hot-toast';
 function App() {
   const [theme, settheme] = useState(localStorage.getItem("theme")? localStorage.getItem("theme"):"light");
   return (
   <div className = " dark:bg-black realative">
+    <Toaster />
    <Navbar theme = {theme} settheme ={settheme} />
    <Hero />
    <Ourtrusted />

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {toast} from "react-hot-toast"
 const Reach = () => {
   const [result, setResult] = React.useState("Submit");
 
@@ -22,7 +23,7 @@ const Reach = () => {
       setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
-     setResult(data.message);
+     setResult("Again Submit");
     }}catch(err){
        toast.error("error");
     }
