@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import assets from "../assets/assets";
-import Toggletheme from "./toggletheme";
+import Toggletheme from "./Toggletheme";
 
 function Navbar({ theme, settheme }) {
   const [sidebar, setsidebar] = useState(true);
